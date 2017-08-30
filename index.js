@@ -33,7 +33,7 @@ function total() {
   i = 0
   totalCost = 0
   while (i < cart.length) {
-    totalCost += parseInt(cart[i].itemPrice)
+    totalCost += parseInt(cart[i][Object.keys(cart[i])])
     i++
   }
   return totalCost
