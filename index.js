@@ -36,8 +36,8 @@ function viewCart() {
 }
 
 function total() {
-  i = 0
-  totalCost = 0
+  var i = 0
+  var totalCost = 0
   while (i < cart.length) {
     totalCost += parseInt(cart[i][Object.keys(cart[i])])
     i++
