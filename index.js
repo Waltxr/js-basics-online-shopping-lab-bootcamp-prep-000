@@ -47,7 +47,9 @@ function removeFromCart(item) {
       i++
     } else {
       return "That item is not in your cart."
+      break;
     }
+    return cart
   }
 }
 
