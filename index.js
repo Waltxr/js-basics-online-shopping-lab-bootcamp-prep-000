@@ -22,7 +22,7 @@ function addToCart(item) {
  return cart
 }
 
-const cartItems = []
+var cartItems = []
 
 function viewCart() {
   for (var i = 0; i < cart.length - 1; i++) {
