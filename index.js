@@ -25,7 +25,7 @@ function addToCart(item) {
 const cartItems = []
 
 function viewCart() {
-  for (var i = 0; i < cart.length; i++) {
+  for (var i = 0; i < cart.length - 1; i++) {
      cartItems.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
   }
   return `In your cart you have ${cartItems.join(', ')}.`
