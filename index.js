@@ -16,15 +16,15 @@ function getRandomInt(min, max) {
 }
 
 function addToCart(item) {
- var addition = new Object({[item]: getRandomInt(0, 100)});
+ var addition = new Object({itemName: item, itemPrice: getRandomInt(0, 100)});
  cart.push(addition);
- console.log(item + " has been added to your cart.")
+ console.log(`${item} has been added to your cart.")
  return cart
 }
 
 function viewCart() {
   for (var i = 0; i < cart.length; i++) {
-    return `In your cart, you have cart[i]`
+    return `In your cart, you have Object.keys(cart[i])`
   }
 }
 
