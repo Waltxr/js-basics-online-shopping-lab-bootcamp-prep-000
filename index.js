@@ -16,7 +16,7 @@ function getRandomInt(min, max) {
 }
 
 function addToCart(item) {
- cart.push(new Object({itemName: item, itemPrice: getRandomInt(0, 100)});)
+ cart.push({itemName: item, itemPrice: getRandomInt(0, 100)});
  console.log(`${item} has been added to your cart.`)
  return cart
 }
@@ -41,7 +41,14 @@ function total() {
 }
 
 function removeFromCart(item) {
-  delete cart.join( ).waffles
+  for (var i = 0; i < cart.length; i++) {
+    if (cart[i].itemName === item) {
+      cart.splice(i, 1)
+      i++
+    } else {
+      return "That item is not in your cart."
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
