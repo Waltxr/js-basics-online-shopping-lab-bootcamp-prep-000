@@ -12,7 +12,7 @@ function setCart(c) {
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+  return Math.floor(Math.random() * (max - min)) + min; 
 }
 
 function addToCart(item) {
@@ -47,7 +47,7 @@ function removeFromCart(item) {
     } else {
       console.log("That item is not in your cart.")
     }
-  } 
+  }
   return cart
 }
 
