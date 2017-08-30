@@ -15,7 +15,16 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
+// function addToCart(item) {
+//  var addition = new Object({[item]: getRandomInt(0, 100)});
+//  cart.push(addition);
+//  console.log(item + " has been added to your cart.")
+//  return cart
+// }
+
 function addToCart(item) {
+ var itemName = item
+ var itemPrice = getRandomInt(0, 100)
  var addition = new Object({[item]: getRandomInt(0, 100)});
  cart.push(addition);
  console.log(item + " has been added to your cart.")
@@ -23,7 +32,9 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  for (var i = 0; i < cart.length; i++) {
+    return `In your cart, you have cart[i]`
+  }
 }
 
 function total() {
