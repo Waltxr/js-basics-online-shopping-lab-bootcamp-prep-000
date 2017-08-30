@@ -56,7 +56,7 @@ function removeFromCart(item) {
       cart.splice(i, 1);
       counter += 1;
     } else if (counter == 0) {
-      console.log('That item is not in your cart.');
+      console.log("That item is not in your cart.");
     }
   }
 }
