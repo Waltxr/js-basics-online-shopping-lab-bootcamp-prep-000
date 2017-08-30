@@ -24,9 +24,9 @@ function addToCart(item) {
 function viewCart() {
   var cartItems = []
   for (var i = 0; i < cart.length - 1; i++) {
-     cartItems.push(`${cart[i]} at $${cart[i]}`)
+     cartItems.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}`)
   }
-  return `In your cart you have ${cartItems.join(', ')} and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`
+  return `In your cart you have ${cartItems.join(', ')} and ${Object.keys(cart[cart.length - 1])} at $${cart[cart.length - 1][Object.keys(cart[cart.length - 1])]}.`
 }
 
 function total() {
