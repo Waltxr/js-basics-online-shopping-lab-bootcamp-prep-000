@@ -32,8 +32,10 @@ function viewCart() {
 }
 
 function total() {
+  i = 0
   while (i < cart.length) {
     totalCost += cart[i].itemPrice
+    i++
   }
   return totalCost
 }
