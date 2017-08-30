@@ -22,10 +22,13 @@ function addToCart(item) {
  return cart
 }
 
+const cartItems = []
+
 function viewCart() {
   for (var i = 0; i < cart.length; i++) {
-    return `In your cart, you have Object.keys(cart[i])`
+     cartItems.push(`${cart[i].itemName} at ${cart[i].itemPrice}`)
   }
+  return `In your car you have ${cartItems.join(, )}.`
 }
 
 function total() {
