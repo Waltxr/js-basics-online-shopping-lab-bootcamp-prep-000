@@ -28,7 +28,7 @@ function viewCart() {
   for (var i = 0; i < cart.length; i++) {
      cartItems.push(`${cart[i].itemName} at ${cart[i].itemPrice}`)
   }
-  return `In your car you have ${cartItems.join(, )}.`
+  return `In your cart you have ${cartItems.join(', ')}.`
 }
 
 function total() {
