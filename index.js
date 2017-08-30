@@ -23,6 +23,10 @@ function addToCart(item) {
 
 function viewCart() {
   var cartItems = []
+
+  if (cart == []) {
+    console.log("Your shopping cart is empty."); 
+  }
   for (var i = 0; i < cart.length - 1; i++) {
      cartItems.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}`)
   }
