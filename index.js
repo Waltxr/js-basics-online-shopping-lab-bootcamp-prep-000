@@ -24,8 +24,8 @@ function addToCart(item) {
 function viewCart() {
   var cartItems = []
 
-  if (cart.length > 0) {
-    
+  if (cart.length === 1) {
+    console.log(`In your cart, you have ${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]}.`);
     } else if (cart.length > 1) {
       for (var i = 0; i < cart.length - 1; i++) {
          cartItems.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}`)
