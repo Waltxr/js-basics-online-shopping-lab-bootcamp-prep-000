@@ -28,11 +28,12 @@ function viewCart() {
     for (var i = 0; i < cart.length - 1; i++) {
        cartItems.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}`)
     }
-      console.log(`In your cart you have ${cartItems.join(', ')} and ${Object.keys(cart[cart.length - 1])} at $${cart[cart.length - 1][Object.keys(cart[cart.length - 1])]}.`);
+      answer = `In your cart you have ${cartItems.join(', ')} and ${Object.keys(cart[cart.length - 1])} at $${cart[cart.length - 1][Object.keys(cart[cart.length - 1])]}.`
+      console.log(answer);
   } else {
       console.log('Your shopping cart is empty.');
   }
-}
+} 
 
 function total() {
   var i = 0
