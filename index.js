@@ -49,13 +49,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var counter = 0
+  counter = 0
 
   for (var i = 0; i < cart.length; i++) {
     if (Object.keys(cart[i]) == item) {
       cart.splice(i, 1);
       counter += 1;
-    } else if var counter == 0 {
+    } else if counter == 0 {
       console.log('That item is not in your cart.');
     }
   }
