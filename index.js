@@ -42,7 +42,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  delete cart.join( ).waffles
 }
 
 function placeOrder(cardNumber) {
