@@ -21,8 +21,6 @@ function addToCart(item) {
  return cart
 }
 
-var cartItems = []
-
 function viewCart() {
   var cartItems = []
   for (var i = 0; i < cart.length - 1; i++) {
