@@ -53,8 +53,8 @@ function removeFromCart(item) {
 
   for (var i = 0; i < cart.length; i++) {
     if (Object.keys(cart[i]) == item) {
-      cart.splice(i, 1)
-      counter += 1
+      cart.splice(i, 1);
+      counter += 1;
     } else if counter == 0 {
       console.log('That item is not in your cart.');
     }
