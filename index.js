@@ -12,7 +12,7 @@ function setCart(c) {
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min; 
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
 function addToCart(item) {
@@ -24,6 +24,7 @@ function addToCart(item) {
 var cartItems = []
 
 function viewCart() {
+  var cartItems = []
   for (var i = 0; i < cart.length - 1; i++) {
      cartItems.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
   }
