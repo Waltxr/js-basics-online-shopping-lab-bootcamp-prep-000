@@ -18,7 +18,7 @@ function getRandomInt(min, max) {
 function addToCart(item) {
  cart.push({itemName: item, itemPrice: getRandomInt(0, 100)});
  console.log(`${item} has been added to your cart.`)
- return cart
+ getCart();
 }
 
 function viewCart() {
@@ -48,7 +48,7 @@ function removeFromCart(item) {
       console.log("That item is not in your cart.")
     }
   }
-  return cart
+  getCart()
 }
 
 function placeOrder(cardNumber) {
